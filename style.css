@@ -170,6 +170,42 @@ flex-wrap: wrap;
 }
 }
 
+.mainSec2Container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+ .mainSec2ContainerRight, .mainSec2ContainerLeft h1, p{
+color: #fff;
+font-size: 20px;
+}
+.mainSec2ContainerRight{
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+  background-color: #f17c0e;
+  min-height: 55vh;
+  width: 40%;
+  padding: 5px;
+  gap: 10px;
+ 
+  }
+.mainSec2ContainerLeft{
+  display: flex;
+  flex-direction: column;
+ justify-content: flex-start;
+  height: 65vh;
+  width: 35%;
+  padding: 10px 5px;
+  gap: 35px;
+}
+.mainSec2ContainerLeft h1{
+  font-size: 30px;
+  font-weight: bold;
+}
 
 .mainSec3{
   display: flex;
