@@ -673,15 +673,13 @@ button {
 
 
   .mainSec3ContentRight {
-    height: 10vh;
+    height: fit-content;
+    padding: 15px 0;
   }
-  .mainSec2ContainerLeft {
-    height: 320px !important;
-    padding: 15px;
-  }
-  .mainSec2ContainerRight {
-    height: 320px;
-    padding: 0 15px;
+
+  .mainSec2ContainerRight, .mainSec2ContainerLeft {
+    height: fit-content;
+    padding:  15px 0;
   }
   .mainsec4Content h1 {
     font-size: 18px;
