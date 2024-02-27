@@ -12,22 +12,24 @@
   background-size: 1650px;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #000;
 
+  
+}
   .nav {
     border-bottom: 3px solid gray;
-    min-height: 90px;
+    height: 90px;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+  
   }
-  .rightNav,
-  .leftNav i {
-    color: white;
+   .rightNav i{
     font-size: 40px;
-  }
+    color: #fff;
+  } 
   .leftNav {
     position: relative;
   }
@@ -36,43 +38,39 @@
     top: 30%;
     transform: translate(-150%);
     font-size: 16px;
+    color: #fff;
   }
   .leftNav input {
-    height: 30px;
-    border: 2px solid gray;
+    height: 40px;
+    border: 2px solid #fff;
     background: none;
     padding: 5px 10px;
   }
   .navText {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    min-height: 87vh;
-    gap: 20px;
+    justify-content: center;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
   }
   .navText h1 {
     display: flex;
     justify-content: center;
     text-align-last: center;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
   }
-  .navText #navText-p1 {
+
+  .navText P{
     display: flex;
     justify-content: center;
     text-align-last: center;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
   }
-  .navText #navText-p2 {
-    display: flex;
-    justify-content: center;
-    text-align-last: center;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-  }
+
   .icon {
     display: flex;
     justify-content: center;
@@ -81,11 +79,10 @@
     font-weight: bold;
     padding-top: 10px;
   }
-}
-/* Header css ends */
 
-/* Main css start */
+  /* Header css ends */
 
+/* Section one start */
 #mainSec1 {
   display: flex;
   flex-direction: column;
@@ -94,6 +91,7 @@
   min-height: 100vh;
   background-color: #000;
   gap: 60px;
+  padding: 15px;
 }
 .slogan {
   display: flex;
@@ -120,6 +118,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  
 }
 .family,
 .business,
@@ -149,6 +148,7 @@ button {
   height: 50px;
   font-size: 20px;
   font-weight: bold;
+ 
 }
 .png {
   display: flex;
@@ -159,6 +159,7 @@ button {
   align-items: center;
   border-radius: 50%;
   color: white;
+  margin-top: 10px;
 }
 
 .png img {
@@ -168,6 +169,10 @@ button {
   color: #fff;
 }
 
+
+.mainSsec2{
+
+}
 .mainSec2Container {
   display: flex;
   flex-wrap: wrap;
@@ -218,12 +223,12 @@ button {
   color: #fff;
 }
 
+
 .mainSec3 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   min-height: 100vh;
-
   background-color: #000;
 }
 .images {
@@ -266,6 +271,7 @@ button {
   padding: 5px;
 }
 
+
 #mainSec4 {
   display: flex;
   justify-content: center;
@@ -305,6 +311,7 @@ button {
   object-fit: cover;
   border-radius: 50%;
 }
+
 
 #mainSec5 {
   display: flex;
@@ -355,6 +362,7 @@ button {
   font-size: 18px;
 }
 
+
 #mainSec6 {
   display: flex;
   justify-content: center;
@@ -387,6 +395,7 @@ button {
 .mainSec6Content h1 {
   font-size: 40px;
 }
+
 
 #mainSec7 {
   display: flex;
@@ -444,13 +453,14 @@ button {
   border-bottom: 2.5px solid white;
 }
 
-.icon {
+.mainSec7Icon {
   display: flex;
-  gap: 45px;
-  /* width: 500px; */
+  gap: 25px;
+  font-size: 30px;
   color: #f17c0e;
   padding-top: 10px;
 }
+
 /* Main css end */
 
 /* Footer Css start */
@@ -462,7 +472,7 @@ button {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
+
 .footer p {
   font-size: 18px;
   text-align-last: center;
@@ -481,12 +491,13 @@ button {
 .footerCopyright a {
   color: #f17c0e;
 }
+}
 /* Footer Css end */
 
 /* Responcive start */
-@media screen and (max-width: 1250px) {
-}
+
 @media screen and (max-width: 1200px) {
+ 
   .mainSec2Container {
     height: fit-content;
   }
@@ -498,21 +509,13 @@ button {
     width: 100%;
   }
 }
-@media screen and (max-width: 850px) {
-  .navText h1 {
-    font-size: 30px;
-    padding: 0 10px;
-  }
+ @media screen and (max-width: 850px) {
+  
   .lombargini {
     width: 600px;
     height: 500px;
   }
-  .navText p {
-    padding: 0 10px;
-  }
-  #mainSec1 {
-    padding: 5px 10px;
-  }
+
   .mainSec2Container {
     height: fit-content;
   }
@@ -531,7 +534,7 @@ button {
   }
   #mainSec7 {
     display: flex;
-    flex-direction: column;
+   /*  flex-direction: column; */
     align-items: center;
   }
   .mainSec7Content {
@@ -543,10 +546,27 @@ button {
   .mainSec7FormForm {
     width: 450px;
   }
-}
+} 
 
 @media screen and (max-width: 650px) {
-
+  .label{
+    width: 100%;
+  }
+  #mainSec7{
+    height: fit-content;
+  }
+  .navHeader {
+    height: fit-content;
+  }
+  .mainsec4Content{
+    width: fit-content;
+  }
+  .mainSec7Form{
+    width: fit-content;
+  }
+  .mainSec7Content{
+    width: fit-content;
+  }
   .mainSec2Container {
     height: fit-content;
   }
@@ -554,8 +574,11 @@ button {
     font-size: 14px;
     font-weight: normal;
   }
+  .mainSec6Content{
+    width: fit-content;
+  }
   .lombargini {
-    width: 400px;
+    width: 100vw;
     height: 300px;
   }
   #navText-p2 {
@@ -595,57 +618,6 @@ button {
   .div {
     width: 80vw;
   }
-  /* .div h1{
-    font-size: 14px;
-  } */
-
-  .mainSec7Content {
-    width: 270px;
-  }
-  .mainSec7Form {
-    width: 270px;
-  }
-  .mainSec7Content h1 {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  .mainSec7Content h3 {
-    font-size: 15px;
-    font-weight: normal;
-  }
-  .mainSec7Content p {
-    font-size: 12px;
-    font-weight: 500;
-  }
-  .label {
-    width: 270px;
-  }
-  .label input {
-    width: 90vw;
-  }
-  .footer p {
-    font-size: 14px;
-  }
-
-  .footerCopyright p {
-    font-size: 14px;
-  }
-  .footerCopyright a {
-    font-size: 14px;
-  }
-  #mainSec7{
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: fit-content;
-  }
-  .mainSec7Content{
-    height: fit-content;
-    padding: 10px;
-  }
-  .mainSec7Form{
-    height: fit-content;
-    padding: 10px;
-  }
 }
 
 @media screen and (max-width: 470px) {
@@ -684,11 +656,7 @@ button {
   .slogan h1 {
     font-size: 20px;
   }
-  .nav .navText h1 {
-    font-size: 6px;
-    font-weight: bold;
-    background-color: red;
-  }
+
   .galery {
     width: 100%;
   }
@@ -708,11 +676,11 @@ button {
     height: 10vh;
   }
   .mainSec2ContainerLeft {
-    height: 300px !important;
+    height: 320px !important;
     padding: 15px;
   }
   .mainSec2ContainerRight {
-    height: 300px;
+    height: 320px;
     padding: 0 15px;
   }
   .mainsec4Content h1 {
@@ -751,18 +719,17 @@ button {
    }
    .mainSec6Content{
     height: fit-content;
-    padding-bottom: 10px;
+    padding-bottom: 70px;
    }
-}
-
-@media screen and (max-width: 350px) {
-  .navHeader nav {
+   .mainSec2{
     display: flex;
-    flex-wrap: wrap;
-  }
-  .navText h1 {
-    font-size: 12px;
-  }
+    flex-direction: column;
+    gap: 10px;
+   }
+} 
+
+/* @media screen and (max-width: 350px) {
+ 
 
   .mainSec7Content {
     padding: 0 10px;
@@ -784,18 +751,20 @@ button {
   .footerCopyright a {
     font-size: 10px;
   }
-}
+} */
 
 @media screen and (min-width: 1650px) {
   .navHeader {
     background-size: 100%;
   }
+
 }
 
 @media screen and (min-width: 1200px) {
   .mainSec2ContainerRight {
     height: 80vh;
   }
+
 }
 
 /* Header responcive end */
